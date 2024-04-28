@@ -414,6 +414,7 @@ textarea{
     resize: none;
 }
 input, textarea{
+    background-color: white;
     font-family: "Bai Jamjuree", sans-serif;
     width: 35vw;
     margin: 5px;

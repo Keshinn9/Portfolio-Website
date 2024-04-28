@@ -450,7 +450,15 @@ form p{
     padding-bottom: 1vw;
     text-align: center;
 }
-
+form button{
+    padding: .8vw;
+}
+form div.form_btn{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: .5vw;
+    column-gap: 4vw;
+}
 /* ------------------------------Socials---------------------------- */
 section#Socials>div {
     padding-top: 15vh;

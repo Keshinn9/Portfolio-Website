@@ -67,16 +67,18 @@
 
         <section id="Contact_Me">
             <h2 class="header">Contact Me</h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
                 <p>Send me a feedback or message me!</p>
                 <input type="hidden" name="access_key" value="5fb2f2b3-d7f7-43ad-8797-d73896886894">
                 
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" id="message" cols="40" rows="10" style="resize: none;" placeholder="Message"></textarea>
-    
-                <button type="submit">Submit</button>
+                <input id="CM_name" type="text" name="name" placeholder="Name" required>
+                <input id="CM_email" type="email" name="email" placeholder="Email" required>
+                <input  id="CM_sub"type="text" name="subject" placeholder="Subject" required>
+                <textarea id="CM_mes" name="message" id="message" cols="40" rows="10" style="resize: none;" placeholder="Message" required></textarea>
+                <div class="form_btn">
+                    <button type="submit">Submit</button>
+                    <button type="reset"> Clear</button>
+                </div>
             </form>
 
             <p>Email: lizadavincent8@gmail.com</p>
@@ -88,29 +90,24 @@
                 </div>
                 <div class="Socials-links">
                     <div>
-                        <a href="https://www.facebook.com/johnvincent.lizada/" target="_blank"><img src="Images/FB.png"
-                                alt="facebook_icon"></a>
+                        <a href="https://www.facebook.com/johnvincent.lizada/" target="_blank"><img src="Images/FB.png" alt="facebook_icon"></a>
                         <a href="https://www.facebook.com/johnvincent.lizada/" target="_blank">Facebook</a>
                     </div>
                     <div>
-                        <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png"
-                                alt="github_icon"></a>
+                        <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png" alt="github_icon"></a>
                         <a href="https://github.com/Keshinn9" target="_blank">Github</a>
         
                     </div>
                     <div>
-                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank"><img src="Images/pinterest.png"
-                                alt="icons"></a>
+                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank"><img src="Images/pinterest.png" alt="icons"></a>
                         <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank">Pinterest</a>
                     </div>
                     <div class="dis">
-                        <a href="https://discordapp.com/users/661166294678241280" target="_blank"><img src="Images/discord.png"
-                                alt="icons"></a>
+                        <a href="https://discordapp.com/users/661166294678241280" target="_blank"><img src="Images/discord.png" alt="icons"></a>
                         <a href="https://discordapp.com/users/661166294678241280" target="_blank">Discord</a>
                     </div>
                     <div>
-                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank"><img src="Images/Steam black.png"
-                                alt="steam_icon"></a>
+                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank"><img src="Images/Steam black.png" alt="steam_icon"></a>
                         <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank">Steam</a>
                     </div>
                 </div>

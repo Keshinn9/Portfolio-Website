@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="INDEX">
+    <header>
+        <nav>
+            <img src="Images/Logo1.png" alt="logo" id="logo">
+            <ul class="navbar">
+                <li class="navbar_item"><a href="index.html#Introduction">HOME</a></li>  
+                <li class="navbar_item"><a href="AboutMe.html">ABOUT ME</a></li>
+                <li class="navbar_item"><a href="Portfolio.html">PORTFOLIO</a></li>
+                <li class="navbar_item"><a href="index.html#Contact_Me">CONTAT ME</a></li>
+                <li class="navbar_item"><a href="index.html#Socials">SOCIALS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Introduction">
+            <div class="intro-one">
+                <h1 class="Introduction">Hello I'm <span class="Introduction">John Vincent Lizada</span>, An IT student, aspiring to be a programer.</h1>
+                <p id="quote">"Join Me On My Adventures"</p>
+            </div>
+            <img src="Images/My_image1.png" alt="My image1" class="Introduction">
+        </section>
+
+        <section id="AboutMe">
+            <h2 class="header">About me</h2>
+            <div class="AboutMe">
+                <img src="Images/My_image2.png" alt="My Image2" class="AboutMe">
+                <div class="about">
+                    <p class="about">I'am currently studying at University of Baguio. My skills are Creativity, Problem solving, Adaptibility, Deep understanding, I know Java, HTML, CSS, Python and still growing.</p>
+                    <button class="about"><a href="AboutMe.html" class="about">Learn More About Me</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Portfolio">
+            <h2 class="header">Portfolio</h2>
+            <div class="Portfolio">
+                <div class="Portfolio1">
+                    <img src="Images/Guessing game.png" alt="Image of a simple number guessing game">
+                    <a href="Portfolio.html#Proj1"><p>A simple number guessing game in the terminal using python.</p></a>
+                </div>
+                <div class="Portfolio2">
+                    <img src="Images/WebAct.jpeg" alt="Image of Website">
+                    <a href="Portfolio.html#Proj2"><p>A website from school activity</p></a>
+                </div>  
+                <div class="Portfolio3">
+                   <img src="Images/Calculator.png" alt="Image of a basic calculator"></a>
+                    <a href="Portfolio.html#Proj3"><p>A very basic calculator using python.</p></a>
+                </div>
+                
+            </div>
+            <div class="Portfolio_btn">
+                <button class="Portfolio"><a href="Portfolio.html">See More</a></button>
+            </div>    
+        </section>
+
+        <section id="Contact_Me">
+            <h2 class="header">Contact Me</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <p>Send me a feedback or message me!</p>
+                <input type="hidden" name="access_key" value="5fb2f2b3-d7f7-43ad-8797-d73896886894">
+                
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" id="message" cols="40" rows="10" style="resize: none;" placeholder="Message"></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+
+            <p>Email: lizadavincent8@gmail.com</p>
+        </section>
+        <section id="Socials">
+            <div>
+                <div class="Socials-title">
+                    <h2 class="header">Socials</h2>
+                </div>
+                <div class="Socials-links">
+                    <div>
+                        <a href="https://www.facebook.com/johnvincent.lizada/" target="_blank"><img src="Images/FB.png"
+                                alt="facebook_icon"></a>
+                        <a href="https://www.facebook.com/johnvincent.lizada/" target="_blank">Facebook</a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png"
+                                alt="github_icon"></a>
+                        <a href="https://github.com/Keshinn9" target="_blank">Github</a>
+        
+                    </div>
+                    <div>
+                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank"><img src="Images/pinterest.png"
+                                alt="icons"></a>
+                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank">Pinterest</a>
+                    </div>
+                    <div class="dis">
+                        <a href="https://discordapp.com/users/661166294678241280" target="_blank"><img src="Images/discord.png"
+                                alt="icons"></a>
+                        <a href="https://discordapp.com/users/661166294678241280" target="_blank">Discord</a>
+                    </div>
+                    <div>
+                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank"><img src="Images/Steam black.png"
+                                alt="steam_icon"></a>
+                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank">Steam</a>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    </main>
+
+    <footer>
+        <div class="col1">
+            <img src="Images/Logo1.png" alt="logo" id="logofooter">
+            <p class="greet">Thank You For Visiting My Page</p>
+            <p class="copyright">Copyright&copy; 2024 HUMCOM1 All Rights Reserved</p>
+        </div>
+        
+        <div class="col2">
+            <span>Overview</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#AboutMe">About Me</a> </li>
+                <li><a href="index.html#Portfolio">Portfolio</a></li>
+                <li><a href="index.html#Contact_Me">Contact Me</a></li>
+                <li><a href="index.html#Socials">Socials</a> </li>
+            </ul>
+        </div>
+        <div class="col3">
+            <span>Follow Me</span>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/johnvincent.lizada/"><img src="Images/FB.png" alt="facebook_icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png" alt="github_icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank"><img src="Images/pinterest.png" alt="icons"></a>
+                    </li>
+                    <li>
+                        <a href="https://discordapp.com/users/661166294678241280" target="_blank"><img src="Images/discord.png" alt="icons"></a>
+                    </li>
+                    <li>
+                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank"><img src="Images/Steam black.png" alt="steam_icon"></a>
+                    </li>
+                    
+                </ul>
+                    
+                </div>
+        </div>
+        <div class="col4">
+            <span>Contact Me</span>
+            <ul>
+                <li>lizadavincent8@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

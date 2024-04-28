@@ -1,0 +1,525 @@
+/* DEFULTS */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 5vw;
+}
+body{
+    background-color: #46645e;
+    font-family:"Bai Jamjuree", sans-serif;
+    font-size: 2vw;
+    background-image: url(Images/Background.png);
+    background-repeat: repeat;
+	background-attachment: fixed;
+    background-blend-mode:luminosity;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+h2 {
+    font-weight: 400;
+    font-size: 2.8vw;
+}
+
+img{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+button{
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+    padding: .5vw;
+    border: none;
+    font-size: 2vw;
+    width: auto;
+    background-color: #242424;
+    border-radius: 2vw;
+}
+button:hover{
+    transition: .3s;
+    background-color: #00b679;
+}
+
+.header{
+    padding-bottom: 2.5vw;
+    display:flex;
+    font-weight: 500;
+    font-size: 3.5vw;
+    text-decoration: .2vw underline #00b679;
+    animation: animate 2.5s ease-in-out infinite;
+}
+section#AboutMe, section#Contact_Me, section#Proj2, section#Abt_skills{
+    background-color: #cbcbcb;
+    padding: 8px;
+    background-image: url(Images/Background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+section#Introduction, section#Portfolio, section#Socials, section#Proj1, section#Abt_desc {
+    background-color: #46645e;
+    padding: 8px;
+    background-image: url(Images/Background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+}
+footer, header {
+    background-color: white;
+}
+header {
+    position: relative;
+    z-index: 2;
+}
+/* ------------------------------Navbar---------------------------- */
+header{
+    top: -1px;
+    position: sticky;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.navbar{
+    display: flex;
+    gap: 50px;
+    padding-right: 45px;
+    font-size: 2vw;
+}
+img#logo{
+    margin: 5px;
+    height: 5vw;
+    width: 9vw;
+}
+li.navbar_item a:hover{
+    color: #00b679;
+    border-bottom: solid #00b679;
+    transition: .2s ease-in-out;
+}
+
+/* ---------------------------Introduction------------------------- */
+section#Introduction{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.3vw;
+    height: 90vh;
+}
+div.intro-one{
+    animation: animate 2.5s ease-in-out infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(1vw);
+    }
+    50%{
+        transform: translateY(-1vw);
+    }
+    100%{
+        transform: translateY(1vw);
+    }
+}
+h1.Introduction{
+    margin-inline: 1vw;
+    max-width: 900px;
+    text-align: center;
+    line-height: 55px;
+    font-weight: 400;
+    font-size: 2.7vw;
+    animation: 1s showContent forwards;
+}
+span.Introduction{
+    font-weight:500;
+    font-size: 3.7vw;
+    text-decoration: .3vw underline #00b679;
+    text-decoration-style:dotted;
+}
+p#quote{
+    text-align: center;
+    margin-block: 60px;
+    font-weight: 300;
+    font-size: 2.3vw;
+    font-style: italic;
+    animation: 1s showContent forwards;
+}
+@keyframes showContent {
+    from{
+        transform: translateY(50px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+}
+img.Introduction{
+    border-radius: 50%;
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
+    border: solid #444242 1vw;
+    border-style:groove;
+}
+
+/* About Me Home*/
+section#AboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding-block: 5vw;
+}
+div.AboutMe{
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+}
+img.AboutMe{
+    border: solid #444242 1vw;
+    border-style:groove;
+    border-radius: 50%;
+    object-fit:cover;
+    width: 30vw;
+    height: 30vw;
+}
+p.about{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-indent: 50px;
+    max-width: 800px;
+    font-size: 2.5vw;
+}
+button.about, a.about{
+    color: white;
+}
+
+/* ---------------------------About Me Page------------------------- */
+section#Abt_desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section#Abt_desc div.abt_head{
+    text-align: center;
+    background-color: #707070;
+    width: 100%;
+    padding-block: 3vw;
+    background-image: url(Images/me_bg.jpeg);
+    background-position: 5px;
+    background-attachment:fixed;
+    background-size: cover;
+    background-blend-mode:multiply ;
+}
+section#Abt_desc img{
+    width: 25vw;
+    height: 25vw;
+    margin: 1vw;
+    border-radius: 50%;
+    border: 1vw #686868 solid;
+    animation: 1s showContent forwards;
+}
+section#Abt_desc h1{
+    color: white;
+    animation: 1s showContent forwards;
+}
+section#Abt_desc div.abt_main{
+    padding-top: 4vw;
+}
+section#Abt_desc p{
+    max-width: 60vw;
+    text-indent: 3vw;
+    padding-bottom: 4vw;
+}
+
+section#Abt_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 3vw;
+}
+section#Abt_skills ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10vw;
+}
+section#Abt_skills li p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+/* ------------------------Portfolio Home----------------------*/
+section#Portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding-block: 5vw;
+}
+div.Portfolio{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 2vw;
+    justify-content: center;
+    gap: 5vw;
+}
+div.Portfolio1, div.Portfolio2,div.Portfolio3{
+    display: grid;
+}
+div.Portfolio1 p, div.Portfolio2 p, div.Portfolio3 p{
+    max-width: 15vw;
+    text-align: center;
+}
+div.Portfolio a{
+    height: 22vw;
+    width: 18vw;
+    position: absolute;
+    background: rgba(0, 182, 121, 0.6) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border: .8vw#00b679 solid;
+}
+div.Portfolio a:hover{
+    transition: .3s ease-in-out;
+    opacity: 100;
+}
+div.Portfolio1 img, div.Portfolio2 img, div.Portfolio3 img{
+    height: 22vw;
+    width: 18vw;
+    border: .8vw #444242 groove;
+}
+div.Portfolio_btn, div.Portfolio_btn button{
+    margin-top: 1vw;
+    text-align: center;
+    border: none;
+}
+button.Portfolio a{
+    color: white;
+    width: auto;
+}
+/* ------------------------Portfolio Page---------------------- */
+section#Port_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: rgb(134, 134, 134);
+    background-image: url(Images/code_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    color: white;
+}
+section#Port_head h1{
+    padding-bottom: 1vw;
+    font-size: 5vw;
+    animation: 1s showContent forwards;
+}
+section#Proj1, section#Proj2, section#Proj3{
+    padding-inline: 2vw;
+    padding-block: 5vw;
+}
+section#Proj1 h2, section#Proj2 h2, section#Proj3 h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+div.Proj_Container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5vw;
+}
+section#Proj1 img{
+    margin: 5px;
+    width: 28vw;
+    height: 30vw;
+    border-radius: 20px;
+}
+section#Proj3 img, section#Proj2 img{
+    margin: 5px;
+    width: 23vw;
+    height: 30vw;
+    border-radius: 20px;
+}
+div.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+div.Proj_Container div.about{
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.Proj_Container div.about p{
+    padding-left: 2vw;
+    padding-top: 2vw;
+    text-indent: 3vw;
+}
+h4.Features{
+    margin-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+div.Proj_Container div.about ul{
+    padding-left: 4vw;
+}
+div.Proj_Container div.about li{
+    font-size: 1.5vw;
+    list-style: disc;
+}
+
+/* ----------------------------Contact Me--------------------------- */
+section#Contact_Me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding-block: 3vw;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #686868;
+    padding: 1vw;
+    border-radius: 1vw;
+    width: 40vw;
+}
+input{
+    height: 2vw;
+}
+textarea{
+    height: 10vw;
+    resize: none;
+}
+input, textarea{
+    font-family: "Bai Jamjuree", sans-serif;
+    width: 35vw;
+    margin: 5px;
+    padding: .5vw;
+    outline: none;
+    font-size: 1.6vw;
+}
+input:focus, textarea:focus{
+    box-shadow: 0px 0px 1px 5px rgba(0, 182, 121, .5)
+}
+form p{
+    color: white;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+
+/* ------------------------------Socials---------------------------- */
+section#Socials>div {
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 15vh;
+}
+section#Socials img {
+    width: 10vw;
+}
+div.Socials-links {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10vw;
+    align-items: center;
+}
+div.Socials-links>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 3vw;
+    font-size: 2vw;
+}
+div.Socials-links>div.dis img {
+    padding-block: 1.3vw;
+}
+
+
+/* ------------------------------Footer---------------------------- */
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-block: 1.5vw;
+    font-size: 1vw;
+}
+footer span{
+    text-decoration: underline black;
+}
+div.col1{
+    border-right: black solid .3vw;
+    text-align: center;
+    padding: 2vw;
+}
+div.col1 p{
+    padding-left: 8vw;
+    max-width: 19vw;
+}
+p.greet{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+p.copyright{
+    font-size: 1vw;
+    padding-top: 2vw;
+    
+}
+div.col1 img{
+    padding-bottom: 1vw;
+    width: 7vw;
+    height: auto;
+}
+div.col2{
+    text-align: center;
+    border-right: black solid .3vw;
+}
+div.col2 ul, li{
+    padding: .5vw;
+    font-size: 1vw;
+}
+
+div.col3{
+    text-align: center;
+    border-right: black solid .3vw;
+}
+div.col3 ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 2vw;
+}
+div.col3 img{
+    width: 3vw;
+}
+
+div.col4{
+    text-align: center;
+}
+div.col4 ul{
+    padding-top:5vw ;
+}
+

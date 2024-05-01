@@ -8,18 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body id="ABOUT_ME">
     <header>
         <nav>
-            <img src="Images/Logo1.png" alt="logo" id="logo">
+            <a href="index.html#Introduction"><img src="Images/Logo1.png" alt="logo" id="logo"></a>
             <ul class="navbar">
-                <li class="navbar_item"><a href="index.html">HOME</a></li>
-                <li class="navbar_item"><a href="AboutMe.html">ABOUT ME</a></li>
-                <li class="navbar_item"><a href="Portfolio.html">PORTFOLIO</a></li>
-                <li class="navbar_item"><a href="index.html#Contact_Me">CONTAT ME</a></li>
-                <li class="navbar_item"><a href="index.html#Socials">SOCIALS</a></li>
+                <div>
+                    <li class="navbar_item-home"><a href="index.html#Introduction">HOME</a></li>  
+                    <li class="navbar_item"><a href="AboutMe.html">ABOUT ME</a></li>
+                    <li class="navbar_item"><a href="Portfolio.html">PORTFOLIO</a></li>
+                    <li class="navbar_item"><a href="index.html#Contact_Me">CONTAT ME</a></li>
+                    <li class="navbar_item"><a href="index.html#Socials">SOCIALS</a></li>
+                </div>
+                
             </ul>
+            <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+                <img src="Images/hamburger-menu.png" alt="hamburger-menu">
+              </a>
         </nav>
     </header>
     <main>

@@ -5,7 +5,7 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding: 5vw;
+    scroll-padding: 65px;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -13,9 +13,10 @@ html{
     overflow-x: hidden; 
 }
 body{
+    overflow-x: hidden; 
     background-color: #46645e;
     font-family:"Bai Jamjuree", sans-serif;
-    font-size: 2vw;
+    font-size: 30px;
     background-image: url(Images/Background.png);
     background-repeat: repeat;
 	background-attachment: fixed;
@@ -30,7 +31,7 @@ li{
 }
 h2 {
     font-weight: 400;
-    font-size: 2.8vw;
+    font-size: 28px;
 }
 
 img{
@@ -41,12 +42,12 @@ img{
 button{
     font-family: "Bai Jamjuree", sans-serif;
     color: white;
-    padding: .5vw;
+    padding: 10px;
     border: none;
-    font-size: 2vw;
+    font-size: 25px;
     width: auto;
     background-color: #242424;
-    border-radius: 2vw;
+    border-radius: 60px;
 }
 button:hover{
     transition: .3s;
@@ -54,14 +55,14 @@ button:hover{
 }
 
 .header{
-    padding-bottom: 2.5vw;
+    padding-bottom: 60px;
     display:flex;
     font-weight: 500;
-    font-size: 3.5vw;
-    text-decoration: .2vw underline #00b679;
+    font-size: 60px;
+    text-decoration: 4px underline #00b679;
     animation: animate 2.5s ease-in-out infinite;
 }
-section#AboutMe, section#Contact_Me, section#Proj2, section#Abt_skills{
+section#AboutMe, section#Contact_Me, section#Proj2, section#Proj4, section#Abt_skills{
     background-color: #cbcbcb;
     padding: 8px;
     background-image: url(Images/Background.png);
@@ -74,7 +75,7 @@ section#AboutMe, section#Contact_Me, section#Proj2, section#Abt_skills{
     padding: 0px;
 }
 
-section#Introduction, section#Portfolio, section#Socials, section#Proj1, section#Abt_desc {
+section#Introduction, section#Portfolio, section#Socials, section#Proj1, section#Proj3, section#Abt_desc {
     background-color: #46645e;
     padding: 8px;
     background-image: url(Images/Background.png);
@@ -105,27 +106,34 @@ nav{
 }
 ul.navbar{
     display: flex;
-    gap: 50px;
-    padding-right: 45px;
-    font-size: 2vw;
+    
+}
+ul.navbar div{
+    display: flex;
+    gap: 2vw;
+    padding-right: 20px;
+}
+ul.navbar a{
+    font-size: 20px;
 }
 img#logo{
     margin: 5px;
-    height: 5vw;
-    width: 9vw;
+    height: 80px;
+    width: 145px;
 }
-li.navbar_item a:hover{
+li.navbar_item a:hover, li.navbar_item-home a:hover{
     color: #00b679;
     border-bottom: solid #00b679;
     transition: .2s ease-in-out;
 }
-
+.menu{
+    display: none;
+}
 /* ---------------------------Introduction------------------------- */
 section#Introduction{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 2.3vw;
     height: 90vh;
 }
 div.intro-one{
@@ -143,17 +151,17 @@ div.intro-one{
     }
 }
 h1.Introduction{
-    margin-inline: 1vw;
+    margin-inline: 10px;
     max-width: 900px;
     text-align: center;
     line-height: 55px;
     font-weight: 400;
-    font-size: 2.7vw;
+    font-size: 50px;
     animation: 1s showContent forwards;
 }
 span.Introduction{
     font-weight:500;
-    font-size: 3.7vw;
+    font-size: 65px;
     text-decoration: .3vw underline #00b679;
     text-decoration-style:dotted;
 }
@@ -161,9 +169,9 @@ p#quote{
     text-align: center;
     margin-block: 60px;
     font-weight: 300;
-    font-size: 2.3vw;
+    font-size: 50px;
     font-style: italic;
-    animation: 1s showContent forwards;
+    animation: .7s showContent forwards;
 }
 @keyframes showContent {
     from{
@@ -171,6 +179,9 @@ p#quote{
         filter: blur(10px);
         opacity: 0;
     }
+}
+section#Introduction div.int_img{
+    padding: 50px;
 }
 img.Introduction{
     border-radius: 50%;
@@ -188,12 +199,15 @@ section#AboutMe{
     justify-content: center;
     flex-direction: column;
     height: auto;
-    padding-block: 5vw;
+    padding-block: 80px;
 }
 div.AboutMe{
     display: flex;
     justify-content: space-around;
     gap: 5vw;
+}
+div.abt_img{
+    padding-left: 1vw;
 }
 img.AboutMe{
     border: solid #444242 1vw;
@@ -204,11 +218,12 @@ img.AboutMe{
     height: 30vw;
 }
 p.about{
+    padding-right: 1vw;
     margin-top: 40px;
     margin-bottom: 50px;
     text-indent: 50px;
-    max-width: 800px;
-    font-size: 2.5vw;
+    max-width: 80vw;
+    font-size: 50px;
 }
 button.about, a.about{
     color: white;
@@ -225,7 +240,7 @@ section#Abt_desc div.abt_head{
     text-align: center;
     background-color: #707070;
     width: 100%;
-    padding-block: 3vw;
+    padding-block: 55px;
     background-image: url(Images/me_bg.jpeg);
     background-position: 5px;
     background-attachment:fixed;
@@ -237,7 +252,7 @@ section#Abt_desc div.abt_head{
 section#Abt_desc img{
     width: 25vw;
     height: 25vw;
-    margin: 1vw;
+    margin: 20px;
     border-radius: 50%;
     border: 1vw #686868 solid;
     animation: 1s showContent forwards;
@@ -247,12 +262,12 @@ section#Abt_desc h1{
     animation: 1s showContent forwards;
 }
 section#Abt_desc div.abt_main{
-    padding-top: 4vw;
+    padding-top: 80px;
 }
 section#Abt_desc p{
-    max-width: 60vw;
-    text-indent: 3vw;
-    padding-bottom: 4vw;
+    max-width: 1200px;
+    text-indent: 60px;
+    padding-bottom: 80px;
 }
 
 section#Abt_skills{
@@ -260,7 +275,7 @@ section#Abt_skills{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-block: 3vw;
+    padding-block: 60px;
 }
 section#Abt_skills img{
     width: 10vw;
@@ -269,12 +284,12 @@ section#Abt_skills img{
 section#Abt_skills ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 8vw;
+    gap: 5vw;
 }
 section#Abt_skills li p{
     text-align: center;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 30px;
 }
 
 /* ------------------------Portfolio Home----------------------*/
@@ -284,12 +299,12 @@ section#Portfolio{
     justify-content: center;
     flex-direction: column;
     height: auto;
-    padding-block: 5vw;
+    padding-block: 100px;
 }
 div.Portfolio{
     display: grid;
     grid-template-columns: auto auto auto;
-    font-size: 2vw;
+    font-size: 40px;
     justify-content: center;
     gap: 5vw;
 }
@@ -297,32 +312,33 @@ div.Portfolio1, div.Portfolio2,div.Portfolio3{
     display: grid;
 }
 div.Portfolio1 p, div.Portfolio2 p, div.Portfolio3 p{
-    max-width: 15vw;
+    font-size:2vw;
+    max-width: 300px;
     text-align: center;
 }
 div.Portfolio a{
-    height: 22vw;
-    width: 18vw;
-    position: absolute;
-    background: rgba(0, 182, 121, 0.6) ;
+    width: 22vw;
+    height: 27vw;
+    position:absolute;
+    background: rgba(0, 0, 0, 0.6) ;;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    border: .8vw#00b679 solid;
+    border: 1vw#00b679 solid;
 }
 div.Portfolio a:hover{
     transition: .3s ease-in-out;
     opacity: 100;
 }
 div.Portfolio1 img, div.Portfolio2 img, div.Portfolio3 img{
-    height: 22vw;
-    width: 18vw;
-    border: .8vw #444242 groove;
+    width: 22vw;
+    height: 27vw;
+    border: 1vw #444242 groove;
 }
 div.Portfolio_btn, div.Portfolio_btn button{
-    margin-top: 1vw;
+    margin-top: 20px;
     text-align: center;
     border: none;
 }
@@ -346,34 +362,37 @@ section#Port_head{
 }
 section#Port_head h1{
     padding-bottom: 1vw;
-    font-size: 5vw;
+    font-size: 95px;
     animation: 1s showContent forwards;
 }
-section#Proj1, section#Proj2, section#Proj3{
-    padding-inline: 2vw;
-    padding-block: 5vw;
+section#Proj1, section#Proj2, section#Proj3, section#Proj4{
+    padding-inline: 35px;
+    padding-block: 90px;
 }
-section#Proj1 h2, section#Proj2 h2, section#Proj3 h2{
+section#Proj1 h2, section#Proj2 h2, section#Proj3 h2, section#Proj4 h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 60px;
 }
 div.Proj_Container{
     display: grid;
     grid-template-columns: auto auto;
     gap: 5vw;
 }
+div.Proj_Container img{
+    border: 15px #444242 solid;
+}
 section#Proj1 img{
+    width: 26vw;
+    height: 27vw;
     margin: 5px;
-    width: 28vw;
-    height: 30vw;
     border-radius: 20px;
 }
-section#Proj3 img, section#Proj2 img{
+section#Proj3 img, section#Proj2 img, section#Proj4 img{
     margin: 5px;
-    width: 23vw;
-    height: 30vw;
+    width: 24vw;
+    height: 28vw;
     border-radius: 20px;
 }
 div.img{
@@ -390,20 +409,20 @@ div.Proj_Container div.about{
     flex-direction: column;
 }
 div.Proj_Container div.about p{
-    padding-left: 2vw;
-    padding-top: 2vw;
-    text-indent: 3vw;
+    padding-left: 40px;
+    padding-top: 40px;
+    text-indent: 60px;
 }
 h4.Features{
-    margin-top: 1.5vw;
-    padding-bottom: 1.5vw;
+    margin-top: 30px;
+    padding-bottom: 25px;
 }
 div.Proj_Container div.about ul{
-    padding-left: 4vw;
+    padding-left: 80px;
 }
 div.Proj_Container div.about li{
-    font-size: 1.5vw;
-    list-style: disc;
+    font-size: 25px;
+    list-style:disc;
 }
 
 /* ----------------------------Contact Me--------------------------- */
@@ -413,7 +432,7 @@ section#Contact_Me{
     justify-content: center;
     flex-direction: column;
     height: auto;
-    padding-block: 3vw;
+    padding-block: 60px;
 }
 form{
     display: flex;
@@ -421,25 +440,25 @@ form{
     justify-content: center;
     flex-direction: column;
     background: #686868;
-    padding: 1vw;
-    border-radius: 1vw;
-    width: 40vw;
+    padding: 20px;
+    border-radius: 20px;
+    width: 790px;
 }
 input{
-    height: 2vw;
+    height: 40px;
 }
 textarea{
-    height: 10vw;
+    height: 200px;
     resize: none;
 }
 input, textarea{
     background-color: white;
     font-family: "Bai Jamjuree", sans-serif;
-    width: 35vw;
+    width: 700px;
     margin: 5px;
-    padding: .5vw;
+    padding: 10px;
     outline: none;
-    font-size: 1.6vw;
+    font-size: 33px;
     border: none;
 }
 input:focus, textarea:focus{
@@ -447,26 +466,25 @@ input:focus, textarea:focus{
 }
 form p{
     color: white;
-    padding-bottom: 1vw;
+    padding-bottom: 20px;
     text-align: center;
 }
 form button{
-    padding: .8vw;
+    padding: 8px;
 }
 form div.form_btn{
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: .5vw;
-    column-gap: 4vw;
+    margin-top: 10px;
+    column-gap: 80px;
 }
 /* ------------------------------Socials---------------------------- */
 section#Socials>div {
-    padding-top: 15vh;
+    padding-block: 160px;
     display: flex;
     align-items: center;
     flex-direction: column;
     height: auto;
-    padding-bottom: 15vh;
 }
 section#Socials img {
     width: 10vw;
@@ -474,7 +492,7 @@ section#Socials img {
 div.Socials-links {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    gap: 10vw;
+    gap: 4vw;
     align-items: center;
 }
 div.Socials-links>div {
@@ -482,11 +500,11 @@ div.Socials-links>div {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    line-height: 3vw;
-    font-size: 2vw;
+    line-height: 60px;
+    font-size: 40px;
 }
 div.Socials-links>div.dis img {
-    padding-block: 1.3vw;
+    padding-block: 1.4vw;
 }
 
 
@@ -494,61 +512,649 @@ div.Socials-links>div.dis img {
 footer{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding-block: 1.5vw;
-    font-size: 1vw;
+    padding-block: 30px;
+    font-size: 20px;
 }
 footer span{
     text-decoration: underline black;
 }
 div.col1{
-    border-right: black solid .3vw;
+    border-right: black solid 5px;
     text-align: center;
-    padding: 2vw;
+    padding: 20px;
 }
 div.col1 p{
     padding-left: 8vw;
-    max-width: 19vw;
+    max-width: 280px;
 }
 p.greet{
-    font-size: 1.5vw;
+    font-size: 25px;
     font-weight: 600;
 }
 p.copyright{
-    font-size: 1vw;
-    padding-top: 2vw;
+    font-size: 15px;
+    padding-top: 40px;
     
 }
 div.col1 img{
+    padding-right: 75px ;
     padding-bottom: 1vw;
-    width: 7vw;
+    width: 6vw;
     height: auto;
 }
 div.col2{
     text-align: center;
-    border-right: black solid .3vw;
+    border-right: black solid 5px;
 }
 div.col2 ul, li{
-    padding: .5vw;
-    font-size: 1vw;
+    padding: 10px;
+    font-size: 15px
 }
 
 div.col3{
     text-align: center;
-    border-right: black solid .3vw;
+    border-right: black solid 5px;
 }
 div.col3 ul{
     display: grid;
     grid-template-columns: auto auto;
-    padding-top: 2vw;
+    padding-top: 40px;
 }
 div.col3 img{
-    width: 3vw;
+    width: 2vw;
 }
 
 div.col4{
     text-align: center;
 }
 div.col4 ul{
-    padding-top:5vw ;
+    padding-top:100px ;
 }
+@media  (hover: none){
+    div.Portfolio a{
+        opacity: 100%;
+    }
+}
+/* -----------------------MID SIZE SCREEN----------------------- */
+@media (max-width: 1300px){
+    .header{
+        padding-bottom: 30px;
+        font-weight: 500;
+        font-size: 40px;
+        /* REMOVE */
+        text-decoration: 4px underline #0064b6; 
+    }
+    /* ------------------NAVBAR-------------------- */
+    ul.navbar{
+        padding-right: 25px;
+    }
+    ul.navbar a{
+        font-size: 15px;
+    }
+    img#logo{
+        margin: 5px;
+        height: 80px;
+        width: 145px;
+    }
+    li.navbar_item a:hover{
+        color: #00b679;
+        border-bottom: solid #00b679;
+        transition: .2s ease-in-out;
+    }
 
+
+    /* -----------------------INTRODUCTION---------------------- */
+    h1.Introduction{
+        font-size: 28px;
+    }
+    span.Introduction{
+        font-size: 45px;
+    }
+    p#quote{
+        font-size: 28px;
+    }
+    section#Introduction div.int_img{
+        padding-right: 20px;
+    }
+    /* -----------------------ABOUT ME----------------------- */
+    p.about{
+        font-size: 28px;
+    }
+    button.about, a.about{
+        color: white;
+        font-size: 20px;
+    }
+    section#AboutMe div.abt_img{
+        padding-left: 20px;
+    }
+    /* -----------------------ABOUT ME PAGE-------------------- */
+    section#Abt_desc h1{
+        font-size: 35px;
+        color: white;
+        animation: 1s showContent forwards;
+    }
+    section#Abt_desc div.abt_main{
+        padding-top: 40px;
+    }
+    section#Abt_desc p{
+        max-width: 85vw;
+        text-indent: 60px;
+        padding-bottom: 40px;
+        font-size: 25px;
+    }
+    section#Abt_skills{
+        padding-block: 40px;
+    }
+    section#Abt_skills img{
+        width: 7vw;
+        height: 7vw;
+    }
+    section#Abt_skills ul{
+        gap: 4vw;
+    }
+    section#Abt_skills li p{
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+
+    /* ------------------------PORTFOLIO------------------------ */
+    div.Portfolio{
+        grid-template-columns: auto auto;
+    }
+    div.Portfolio3{
+        position: absolute;
+        visibility: hidden;
+    }
+    div.Portfolio a{
+        width: 26vw;
+        height: 32vw;
+        
+    }
+    div.Portfolio1 p, div.Portfolio2 p, div.Portfolio3 p{
+        font-size: 3vw
+    }
+    div.Portfolio1 img, div.Portfolio2 img, div.Portfolio3 img{
+        width: 26vw;
+        height: 32vw;
+    }
+    
+    /* ---------------------PORTFOLIO PAGE---------------------- */
+    section#Port_head{
+        height: 65vh;
+    }
+    section#Port_head h1{
+        font-size: 65px;
+    }
+    section#Proj1, section#Proj2, section#Proj3, section#Proj4{
+        padding-inline: 25px;
+        padding-block: 70px;
+    }
+    section#Proj1 h2, section#Proj2 h2, section#Proj3 h2, section#Proj4 h2{
+        font-size: 40px;
+    }
+    div.Proj_Container{
+        gap: .5vw;
+    }
+    div.Proj_Container img{
+        border: 10px #444242 solid;
+    }
+    section#Proj1 img{
+        width: 31vw;
+        height: 32vw;
+    }
+    section#Proj3 img, section#Proj2 img, section#Proj4 img{
+        width: 31vw;
+        height: 36vw;
+    }
+    div.Proj_Container div.about{
+        max-width: 45vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    div.Proj_Container div.about p{
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    div.about h3{
+        font-size: 30px;
+    }
+    h4.Features{
+        margin-top: 30px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    div.Proj_Container div.about ul{
+        padding-left: 80px;
+    }
+    div.Proj_Container div.about li{
+        font-size: 20px;
+        list-style:disc;
+    }
+
+
+    /* --------------------CONTACT ME----------------------- */
+    form{
+        width: 500px;
+    }
+    input{
+        height: 20px;
+    }
+    input, textarea{
+        width: 450px;
+        font-size: 20px;
+    }
+    form p{
+        font-size: 25px;
+    }
+    form button{
+        font-size: 20px;
+    }
+    form div.form_btn{
+        column-gap: 50px;
+    }
+    section#Contact_Me p.email{
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    /* --------------------SOCIALS----------------------- */
+    section#Socials img {
+        width: 9vw;
+    }
+    div.Socials-links>div {
+        font-size: 25px;
+        padding: 15px;
+    }
+    /* --------------------FOOTER----------------------- */
+    footer{
+        font-size: 15px;
+    }
+    footer span{
+        text-decoration: underline black;
+    }
+    div.col1{
+        border-right: black solid 3px;
+    }
+    div.col1 p{
+        max-width: 200px;
+    }
+    p.greet{
+        font-size: 20px;
+    }
+    p.copyright{
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    div.col1 img{
+        padding-right: 0px;
+        padding-left: 30px;
+        padding-bottom: 1vw;
+        width: 9vw;
+        height: 5vw;
+    }
+    div.col2{
+        border-right: black solid 3px;
+    }
+    div.col2 ul, li{
+        font-size: 13px
+    }
+    
+    div.col3{
+        border-right: black solid 3px;
+    }
+    div.col3 img{
+        width: 3vw;
+    }
+    div.col4 ul{
+        padding-top:80px;
+    }
+}
+/* ----------------------SMALL SIZE SCREEN------------------- */
+@media (max-width: 700px) {
+    .header{
+        font-size: 35px;
+        /* REMOVE */
+        text-decoration: 4px underline #e40606; 
+    }
+    html{
+        scroll-padding: 100px;
+    }
+    /* -------------------------NAVBAR----------------------- */
+    header{
+        position: relative;
+    }
+    ul.navbar{
+        display: none;
+    }
+    ul.navbar div{
+        margin-right: 6vw;
+        display: grid;
+        background-color: #444242;
+        grid-template-columns: auto auto auto;
+        border-radius: 20px;
+        gap: 0;
+        padding-right: 0;
+    }
+    ul.navbar li a{
+        color: white;
+        text-decoration: none;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .menu img{
+        width: 30px;
+        height: 30px;
+        padding-right: 3vw;
+        padding-bottom: 2vw;
+    }
+    li.navbar_item a:hover, li.navbar_item-home a:hover{
+        color: #00b679;
+        border-bottom: none;
+        transition: .2s ease-in-out;
+    }
+
+    /* -----------------------INTRODUCTION--------------------- */
+    section#Introduction{
+        width: auto;
+        flex-direction: column-reverse;
+    }
+    h1.Introduction{
+
+        font-size: 25px;
+    }
+    span.Introduction{
+        font-size: 35px;
+    }
+    p#quote{
+        font-size: 25px;
+    }
+    section#Introduction div.int_img{
+        padding: 0px;
+        margin-bottom: -4vh;
+    }
+    img.Introduction{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    /* ------------------------ABOUT ME----------------------- */
+    section#AboutMe{
+        padding-block: 40px;
+    }
+    div.AboutMe{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    div.abt_img{
+        padding-left: 0;
+    }
+    img.AboutMe{
+        width: 40vw;
+        height: 40vw;
+    }
+    p.about{
+        padding-right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-indent: 0px;
+        font-size: 25px;
+        text-align: center;
+    }
+    div.about div{
+        text-align: center;
+    }
+    button.about, a.about{
+        font-size: 15px;
+        color: white;
+    }
+    /* -----------------------ABOUT ME PAGE-------------------- */
+    section#Abt_desc img {
+        width: 40vw;
+        height: 40vw;
+    }
+    section#Abt_desc h1{
+        font-size: 35px;
+    }
+    section#Abt_desc div.abt_main{
+        padding-top: 40px;
+    }
+    section#Abt_desc p{
+        text-indent: 40px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    section#Abt_skills{
+        padding-block: 40px;
+        text-align: center;
+    }
+    section#Abt_skills img{
+        width: 12vw;
+        height: 12vw;
+    }
+    section#Abt_skills ul{
+        gap: 4vw;
+    }
+    section#Abt_skills li p{
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    section#Abt_skills ul{
+        grid-template-columns: auto auto;
+        column-gap: 10vw;
+    }
+
+    /* -----------------------PORTFOLIO------------------------ */
+    div.Portfolio{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 40px;
+        justify-content: center;
+        gap: 5vw;
+    }
+    div.Portfolio1 p, div.Portfolio2 p, div.Portfolio3 p{
+        font-size:3.5vw;
+        max-width: 300px;
+        text-align: center;
+    }
+    div.Portfolio a{
+        width: 31vw;
+        height: 35vw;
+    }
+    div.Portfolio1 img, div.Portfolio2 img, div.Portfolio3 img{
+        width: 31vw;
+        height: 35vw;
+    }
+    div.Portfolio_btn, div.Portfolio_btn button{
+        margin-top: 10px;
+        text-align: center;
+        border: none;
+    }
+    button{
+        font-size: 0px;
+    }
+    button.Portfolio a{
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        width: auto;
+    }
+    /* ---------------------PORTFOLIO PAGE---------------------- */
+    section#Port_head{
+        background-size: none;
+        background-position: -200px;
+    }
+    section#Port_head h1{
+        padding-bottom: 1vw;
+        font-size: 50px;
+        animation: 1s showContent forwards;
+    }
+    section#Proj1, section#Proj2, section#Proj3, section#Proj4{
+        padding-inline: 5px;
+        padding-block: 40px;
+    }
+    section#Proj1 h2, section#Proj2 h2, section#Proj3 h2, section#Proj4 h2{
+        font-size: 35px;
+    }
+    div.Proj_Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    div.Proj_Container img{
+        border: 10px #444242 solid;
+    }
+    section#Proj1 img{
+        width: 49vw;
+        height: 50vw;
+        margin: 5px;
+    }
+    section#Proj3 img, section#Proj2 img, section#Proj4 img{
+        width: 50vw;
+        height: 55vw;
+        margin: 5px;
+    }
+    section#Proj2 div.Proj_Container, section#Proj4 div.Proj_Container{
+        flex-direction: column-reverse;
+    }
+    div.img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    div.Proj_Container div.about{
+        max-width: 90vw;
+        text-align: center;
+    }
+    div.Proj_Container div.about p{
+        padding-inline: 5px;
+        padding-top: 20px;
+        text-indent: 0px;
+    }
+    div.about h3{
+        font-size: 28px;
+    }
+    h4.Features{
+        margin-top: 10px;
+        padding-top: 0px;
+        font-size: 28px;
+    }
+    div.Proj_Container div.about ul{
+        padding-left: 0px;
+    }
+    div.Proj_Container div.about li{
+        padding: 0px;
+        font-size: 18px;
+        list-style-position: inside;
+    }
+
+
+    /* ----------------------CONTACT ME----------------------- */
+    form{
+        padding: 2vw;
+        width: 79vw;
+    }
+    input{
+        height: 4vw;
+    }
+    textarea{
+        height: 20vw;
+    }
+    input, textarea{
+        width: 70vw;
+        font-size: 15px;
+    }
+    form p{
+        font-size: 18px;
+        color: white;
+        padding-block: 10px;
+        text-align: center;
+    }
+    form button{
+        padding: 8px;
+        font-size: 15px;
+    }
+    form div.form_btn{
+        margin-top: 5px;
+        column-gap: 30px;
+    }
+    section#Contact_Me p.email{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* ------------------------SOCIALS---------------------- */
+
+    section#Socials img {
+        width: 18vw;
+    }
+    div.Socials-links {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2vw;
+    }
+    div.Socials-links>div {
+        font-size: 20px;
+    }
+    div.Socials-links>div.dis img {
+        padding-block: 2.4vw;
+    }
+
+    /* ---------------------------FOOTER------------------------- */
+    footer{
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-inline: 5px;
+    }
+    footer span{
+        text-decoration: underline black;
+    }
+    div.col1{
+        border-right: black solid 2px;
+    }
+    div.col1 p{
+        padding-left: 0px;
+    }
+    p.greet{
+        font-size: 20px;
+    }
+    p.copyright{
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    div.col1 img{
+        width: 13vw;
+        height: 7vw;
+    }
+    div.col2{
+        border-right: black solid 2px;
+    }
+    div.col2 ul, li{
+        font-size: 10px
+    }
+    
+    div.col3{
+        border-right: black solid 2px;
+    }
+    div.col3 img{
+        width: 4vw;
+    }
+    div.col4 ul{
+        padding-top:80px;
+    }
+}

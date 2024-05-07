@@ -581,8 +581,6 @@ div.col4 ul{
         padding-bottom: 30px;
         font-weight: 500;
         font-size: 40px;
-        /* REMOVE */
-        text-decoration: 4px underline #0064b6; 
     }
     /* ------------------NAVBAR-------------------- */
     ul.navbar{
@@ -818,8 +816,6 @@ div.col4 ul{
 @media (max-width: 700px) {
     .header{
         font-size: 35px;
-        /* REMOVE */
-        text-decoration: 4px underline #e40606; 
     }
     html{
         scroll-padding: 100px;

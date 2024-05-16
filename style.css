@@ -5,21 +5,21 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding: 65px;
+    scroll-padding: 90px;
+    overflow-x: visible;
+}
+body{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
-}
-body{
-    overflow-x: hidden; 
+    overflow-x:hidden; 
     background-color: #46645e;
     font-family:"Bai Jamjuree", sans-serif;
     font-size: 30px;
     background-image: url(Images/Background.png);
     background-repeat: repeat;
-	background-attachment: fixed;
+	background-attachment: cover;
     background-blend-mode:luminosity;
 }
 a{
@@ -67,7 +67,7 @@ section#AboutMe, section#Contact_Me, section#Proj2, section#Proj4, section#Abt_s
     padding: 8px;
     background-image: url(Images/Background.png);
     background-repeat: repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-blend-mode: multiply;
     width: 100%;
     height: 100%;
@@ -80,7 +80,7 @@ section#Introduction, section#Portfolio, section#Socials, section#Proj1, section
     padding: 8px;
     background-image: url(Images/Background.png);
     background-repeat: repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-blend-mode: luminosity;
     width: 100%;
     height: 100%;
@@ -91,15 +91,17 @@ footer, header {
     background-color: white;
 }
 header {
+    overflow-y: visible;
     position: relative;
     z-index: 2;
 }
 /* ------------------------------Navbar---------------------------- */
 header{
-    top: -1px;
-    position: sticky;
+    top: 0px;
+    position:sticky;
 }
 nav{
+    
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -819,6 +821,7 @@ div.col4 ul{
     }
     html{
         scroll-padding: 100px;
+        overflow-x: hidden;
     }
     /* -------------------------NAVBAR----------------------- */
     header{

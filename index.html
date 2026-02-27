@@ -15,11 +15,15 @@
         <nav>
             <a href="index.html#Introduction">John Vincent Lizada</a>
             <ul class="navbar">
-                <div>
-                    <li class="navbar_item"><a href="AboutMe.html">ABOUT ME</a></li>
-                    <li class="navbar_item"><a href="Portfolio.html">PORTFOLIO</a></li>
-                </div>
-                
+                    <li class="navbar_item">
+                        <a href="Portfolio.html">Portfolio</a>
+                    </li>
+
+                    <li class="navbar_item">
+                        <a href="AboutMe.html">About me</a>
+                    </li>
+                    
+      
             </ul>
             <a href="javascript:void(0);" class="menu" onclick="myFunction()">
                 <img src="Images/hamburger-menu.png" alt="hamburger-menu">
@@ -28,55 +32,75 @@
     </header>
     <main>
         <section id="Introduction">
-            <div class="hero">
-                <h1>John Vincent Lizada</h1>
-                <p>Baguio City, Benguet, Philippines</p>
-                <button>Resume</button>
+            <div class="Intro">
+                <div id="Intro_container">
+                    <h1>John Vincent Lizada</h1>
+                    <div id="soc_container">
+                        <div class="Intro_socials"><a href=""></a></div>
+                        <div class="Intro_socials"><a href=""></a></div>
+                        <div class="Intro_socials"><a href=""></a></div>
+                    </div>
+                </div>
+                
+                <div id="intro_loc">
+                    <img src="Images/Loc_icon.png" alt="loc_icon">
+                    <p>Baguio City, Benguet, Philippines</p>
+                </div>
+                <p>I’m a student currently studying Information Technology</p>
+                <button id="intro_btn">Resume</button>
             </div>   
         </section>
 
         <section id="Skills">
             <h2 class="header">Skills</h2>
             <div class="Skills"> 
-                <h3>Technical</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-
-                <h3>Soft</h3>
-                <ul>
-                    <li>Problem Solving</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="Skills_container">
+                    <div id="Technical">
+                        <h3>Technical</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>  
+                    </div>
+                    <div id="Soft">
+                        <h3>Soft</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Logical Thinking</li>
+                            <li>Flexible</li>
+                            <li>Critical Thinking</li>
+                            <li>Attention to detail</li>
+                            <li>Multitasking</li>
+                        </ul> 
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="Projects">
             <h2 class="header">Projects</h2>
             <div class="Projects">
-
                 <div class="Project">
                     <img src="Images/Calculator.png" alt="Image of a basic calculator"></a>
-                    <p>Calculator</p>
-                    <ul>
-                        <li>
-                            <img src="Images/icons-python-color.png" alt="python_logo">
-                            <p>Python</p>
-                        </li>
-                    </ul>
-                    <p>Short Description</p>
+                    <div>
+                        <p>Calculator</p>
+                        <ul>
+                            <li>
+                                <img src="Images/icons-python-color.png" alt="python_logo">
+                                <p>Python</p>
+                            </li>
+                        </ul>
+                        <p>Short Description</p>
+                    </div>
                 </div>
 
                 <div class="Project">
                     <img src="" alt="Image of my V1 portfolio">
-                    <p>Portfolio</p>
                     <div>
+                    <p>Portfolio</p>
                         <ul>
                             <li>
                                 <img src="Images/icons-html-color.png"alt="html_logo">
@@ -102,69 +126,39 @@
 
         <section id="Contact">
             <h2 class="header">Get In Touch</h2>
-
-
-
+            <p>Want to Collaborate?</p>
+            <p>Let Have a Chat!</p>
+            <button>Email</button>
+            <button>LinkedIn</button> 
             <!-- <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
                 <p>Send me a feedback or message me!</p>
                 <input type="hidden" name="access_key" value="5fb2f2b3-d7f7-43ad-8797-d73896886894"> -->
         </section>
-        <section id="Socials">
-            <div>
-                <div class="Socials-title">
-                    <h2 class="header">Socials</h2>
-                </div>
-                <div class="Socials-links">
-                    <div>
-                        <a href="https://www.facebook.com/johnvincent.lizada/" target="_blank"><img src="Images/FB.png" alt="facebook_icon"></a>
-                        <a href="https://www.facebook.com/johnvincent.lizada/" target="_blank">Facebook</a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png" alt="github_icon"></a>
-                        <a href="https://github.com/Keshinn9" target="_blank">Github</a>
-        
-                    </div>
-                </div>
-            </div>
-        
-        </section>
     </main>
 
     <footer>
-        <div class="col1">
-            <img src="Images/Logo1.png" alt="logo" id="logofooter">
+        <div id="line"></div>
+        <div>
+            <p>Pages</p>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+            </ul>
+        </div>
+        <div>
+            <p>Socials</p>
+            <ul>
+                <li>Github</li>
+                <li>LinkedIn</li>
+                <li>Email</li>
+            </ul>
+        </div>
+        <div>
             <p class="greet">Thank You For Visiting My Page</p>
-            <p class="copyright">Copyright&copy; 2024 HUMCOM1 All Rights Reserved</p>
+            <p class="copyright">Made by <span>John Vincent Lizada<span> | Copyright&copy; 2026 All Rights Reserved</p>
         </div>
         
-        <div class="col2">
-            <span>Overview</span>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#AboutMe">About Me</a> </li>
-                <li><a href="index.html#Portfolio">Portfolio</a></li>
-                <li><a href="index.html#Contact_Me">Contact Me</a></li>
-                <li><a href="index.html#Socials">Socials</a> </li>
-            </ul>
-        </div>
-        <div class="col3">
-            <span>Follow Me</span>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/johnvincent.lizada/"><img src="Images/FB.png" alt="facebook_icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png" alt="github_icon"></a>
-                    </li>
-                </ul>
-                </div>
-        </div>
-        <div class="col4">
-            <span>Contact Me</span>
-            <ul>
-                <li>lizadavincent8@gmail.com</li>
-            </ul>
-        </div>
     </footer>
 </body>
 </html>

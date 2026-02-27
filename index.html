@@ -6,21 +6,18 @@
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body id="INDEX">
     <header>
         <nav>
-            <a href="index.html#Introduction"><img src="Images/Logo1.png" alt="logo" id="logo"></a>
+            <a href="index.html#Introduction">John Vincent Lizada</a>
             <ul class="navbar">
                 <div>
-                    <li class="navbar_item-home"><a href="index.html#Introduction">HOME</a></li>  
                     <li class="navbar_item"><a href="AboutMe.html">ABOUT ME</a></li>
                     <li class="navbar_item"><a href="Portfolio.html">PORTFOLIO</a></li>
-                    <li class="navbar_item"><a href="index.html#Contact_Me">CONTACT ME</a></li>
-                    <li class="navbar_item"><a href="index.html#Socials">SOCIALS</a></li>
                 </div>
                 
             </ul>
@@ -31,68 +28,86 @@
     </header>
     <main>
         <section id="Introduction">
-            <div class="intro-one">
-                <h1 class="Introduction">Hello I'm <span class="Introduction">John Vincent Lizada</span>, An IT student, aspiring to be a programer.</h1>
-                <p id="quote">"Join Me On My Adventures"</p>
-            </div>
-            <div class="int_img">
-                <img src="Images/My_image1.png" alt="My image1" class="Introduction">
-            </div>
-            
+            <div class="hero">
+                <h1>John Vincent Lizada</h1>
+                <p>Baguio City, Benguet, Philippines</p>
+                <button>Resume</button>
+            </div>   
         </section>
 
-        <section id="AboutMe">
-            <h2 class="header">About me</h2>
-            <div class="AboutMe">
-                <div class="abt_img">
-                    <img src="Images/My_image2.png" alt="My Image2" class="AboutMe">
-                </div>
-                <div class="about">
-                    <p class="about">I'am currently studying at University of Baguio. My skills are Creativity, Problem solving, Adaptibility, Deep understanding, I know Java, HTML, CSS, Python and still growing.</p>
-                    <div><button class="about"><a href="AboutMe.html" class="about">Learn More About Me</a></button></div>
-                </div>
+        <section id="Skills">
+            <h2 class="header">Skills</h2>
+            <div class="Skills"> 
+                <h3>Technical</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+
+                <h3>Soft</h3>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </section>
 
-        <section id="Portfolio">
-            <h2 class="header">Portfolio</h2>
-            <div class="Portfolio">
-                <div class="Portfolio1">
-                    <img src="Images/Guessing game.png" alt="Image of a simple number guessing game">
-                    <a href="Portfolio.html#Proj1"><p>A simple number guessing game in the terminal using python.</p></a>
+        <section id="Projects">
+            <h2 class="header">Projects</h2>
+            <div class="Projects">
+
+                <div class="Project">
+                    <img src="Images/Calculator.png" alt="Image of a basic calculator"></a>
+                    <p>Calculator</p>
+                    <ul>
+                        <li>
+                            <img src="Images/icons-python-color.png" alt="python_logo">
+                            <p>Python</p>
+                        </li>
+                    </ul>
+                    <p>Short Description</p>
                 </div>
-                <div class="Portfolio2">
-                    <img src="Images/WebAct.jpeg" alt="Image of Website">
-                    <a href="Portfolio.html#Proj2"><p>A website from school activity</p></a>
-                </div>  
-                <div class="Portfolio3">
-                   <img src="Images/Calculator.png" alt="Image of a basic calculator"></a>
-                    <a href="Portfolio.html#Proj3"><p>A very basic calculator using python.</p></a>
+
+                <div class="Project">
+                    <img src="" alt="Image of my V1 portfolio">
+                    <p>Portfolio</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <img src="Images/icons-html-color.png"alt="html_logo">
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <img src="Images/icons-css-color.png" alt="css_logo">
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <img src="Images/" alt="javascript_logo">
+                                <p>Javascript</p>
+                            </li>
+                        </ul>
+                        <p>Short Description</p>
+                    </div>
                 </div>
-                
             </div>
             <div class="Portfolio_btn">
                 <button class="Portfolio"><a href="Portfolio.html">See More</a></button>
             </div>    
         </section>
 
-        <section id="Contact_Me">
-            <h2 class="header">Contact Me</h2>
-            <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
-                <p>Send me a feedback or message me!</p>
-                <input type="hidden" name="access_key" value="5fb2f2b3-d7f7-43ad-8797-d73896886894">
-                
-                <input id="CM_name" type="text" name="name" placeholder="Name" required>
-                <input id="CM_email" type="email" name="email" placeholder="Email" required>
-                <input  id="CM_sub"type="text" name="subject" placeholder="Subject" required>
-                <textarea id="CM_mes" name="message" id="message" cols="40" rows="10" style="resize: none;" placeholder="Message" required></textarea>
-                <div class="form_btn">
-                    <button type="submit">Submit</button>
-                    <button type="reset"> Clear</button>
-                </div>
-            </form>
+        <section id="Contact">
+            <h2 class="header">Get In Touch</h2>
 
-            <p class="email">Email: lizadavincent8@gmail.com</p>
+
+
+            <!-- <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+                <p>Send me a feedback or message me!</p>
+                <input type="hidden" name="access_key" value="5fb2f2b3-d7f7-43ad-8797-d73896886894"> -->
         </section>
         <section id="Socials">
             <div>
@@ -108,18 +123,6 @@
                         <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png" alt="github_icon"></a>
                         <a href="https://github.com/Keshinn9" target="_blank">Github</a>
         
-                    </div>
-                    <div>
-                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank"><img src="Images/pinterest.png" alt="icons"></a>
-                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank">Pinterest</a>
-                    </div>
-                    <div class="dis">
-                        <a href="https://discordapp.com/users/661166294678241280" target="_blank"><img src="Images/discord.png" alt="icons"></a>
-                        <a href="https://discordapp.com/users/661166294678241280" target="_blank">Discord</a>
-                    </div>
-                    <div>
-                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank"><img src="Images/Steam black.png" alt="steam_icon"></a>
-                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank">Steam</a>
                     </div>
                 </div>
             </div>
@@ -153,16 +156,6 @@
                     <li>
                         <a href="https://github.com/Keshinn9" target="_blank"><img src="Images/Github.png" alt="github_icon"></a>
                     </li>
-                    <li>
-                        <a href="https://www.pinterest.ph/Keshinn_9/" target="_blank"><img src="Images/pinterest.png" alt="icons"></a>
-                    </li>
-                    <li>
-                        <a href="https://discordapp.com/users/661166294678241280" target="_blank"><img src="Images/discord.png" alt="icons"></a>
-                    </li>
-                    <li>
-                        <a href="https://steamcommunity.com/id/KeshinnJVL/" target="_blank"><img src="Images/Steam black.png" alt="steam_icon"></a>
-                    </li>
-                    
                 </ul>
                 </div>
         </div>

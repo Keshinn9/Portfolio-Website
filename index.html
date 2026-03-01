@@ -13,7 +13,7 @@
 <body id="INDEX">
     <header>
         <nav>
-            <a href="index.html#Introduction">John Vincent Lizada</a>
+            <a href="index.html">John Vincent Lizada</a>
             <ul class="navbar">
                     <li class="navbar_item">
                         <a href="Portfolio.html">Portfolio</a>
@@ -22,12 +22,7 @@
                     <li class="navbar_item">
                         <a href="AboutMe.html">About me</a>
                     </li>
-                    
-      
             </ul>
-            <a href="javascript:void(0);" class="menu" onclick="myFunction()">
-                <img src="Images/hamburger-menu.png" alt="hamburger-menu">
-              </a>
         </nav>
     </header>
     <main>
@@ -36,9 +31,9 @@
                 <div id="Intro_container">
                     <h1>John Vincent Lizada</h1>
                     <div id="soc_container">
-                        <div class="Intro_socials"><a href=""></a></div>
-                        <div class="Intro_socials"><a href=""></a></div>
-                        <div class="Intro_socials"><a href=""></a></div>
+                        <a href=""><div class="Intro_socials"><img src="Images/icons8-github-90.png" alt="github_icon"></div></a>
+                        <a href=""><div class="Intro_socials"><img src="Images/icons8-mail-96.png" alt="mail_icon"></div></a>
+                        <a href=""><div class="Intro_socials"><img src="Images/icons8-linkedin-96.png" alt="linkedIn_icon"></div></a>
                     </div>
                 </div>
                 
@@ -57,24 +52,47 @@
                 <div class="Skills_container">
                     <div id="Technical">
                         <h3>Technical</h3>
-                        <ul>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>  
+                        <ul id="tech1">
+                            <li class="java">
+                                <img src="Images/icons-java-color.png" alt="java_icon">
+                                <p>Java</p>
+                            </li>
+                            <li class="python">
+                                <img src="Images/icons-python-color.png" alt="java_icon">
+                                <p>Python</p>
+                            </li>
+                        </ul>
+                        <ul id="tech2">
+                            <li class="html">
+                                <img src="Images/icons-html-color.png" alt="java_icon">
+                                <p>HTML</p>
+                            </li>
+                            <li class="css">
+                                <img src="Images/icons-css-color.png" alt="java_icon">
+                                <p>CSS</p>
+                            </li>
+                            <li class="js">
+                                <img src="Images/icons8-javascript-480.png" alt="java_icon">
+                                <p>Javascript</p>
+                            </li>
+                        </ul>
                     </div>
+                    <hr>
                     <div id="Soft">
                         <h3>Soft</h3>
-                        <ul>
-                            <li>Problem Solving</li>
-                            <li>Logical Thinking</li>
-                            <li>Flexible</li>
-                            <li>Critical Thinking</li>
-                            <li>Attention to detail</li>
-                            <li>Multitasking</li>
+                        <div>
+                            <ul id="soft1">
+                            <li><img src="Images/List_style.png" alt=">">Problem Solving</li>
+                            <li><img src="Images/List_style.png" alt=">">Logical Thinking</li>
+                            <li><img src="Images/List_style.png" alt=">">Flexible</li>
+                        </ul>
+                        <ul id="soft2">
+                            <li><img src="Images/List_style.png" alt=">">Critical Thinking</li>
+                            <li><img src="Images/List_style.png" alt=">">Attention to detail</li>
+                            <li><img src="Images/List_style.png" alt=">">Multitasking</li>
                         </ul> 
+                    </div>
+                        
                     </div>
                 </div>
             </div>
@@ -84,38 +102,36 @@
             <h2 class="header">Projects</h2>
             <div class="Projects">
                 <div class="Project">
-                    <img src="Images/Calculator.png" alt="Image of a basic calculator"></a>
-                    <div>
-                        <p>Calculator</p>
+                    <div id="Calculator">
+                        <div class="info">
+                            <p id="title">Python Calculator</p>
+                            <p>Short Description</p>
+                        </div>
                         <ul>
                             <li>
                                 <img src="Images/icons-python-color.png" alt="python_logo">
-                                <p>Python</p>
                             </li>
                         </ul>
-                        <p>Short Description</p>
                     </div>
                 </div>
 
                 <div class="Project">
-                    <img src="" alt="Image of my V1 portfolio">
-                    <div>
-                    <p>Portfolio</p>
+                    <div id="Portfolio">
+                        <div class="info">
+                            <p id="title">Portfolio</p>
+                            <p>Short Description</p>
+                        </div>
                         <ul>
                             <li>
                                 <img src="Images/icons-html-color.png"alt="html_logo">
-                                <p>HTML</p>
                             </li>
                             <li>
                                 <img src="Images/icons-css-color.png" alt="css_logo">
-                                <p>CSS</p>
                             </li>
                             <li>
-                                <img src="Images/" alt="javascript_logo">
-                                <p>Javascript</p>
+                                <img src="Images/icons8-javascript-480.png" alt="javascript_logo">
                             </li>
                         </ul>
-                        <p>Short Description</p>
                     </div>
                 </div>
             </div>
@@ -126,37 +142,43 @@
 
         <section id="Contact">
             <h2 class="header">Get In Touch</h2>
-            <p>Want to Collaborate?</p>
-            <p>Let Have a Chat!</p>
-            <button>Email</button>
-            <button>LinkedIn</button> 
+            <div>
+                <p id="sup_text">Want to Collaborate?</p>
+                <p id="cta">Let Have a Chat!</p>
+                <div>
+                    <button>Email</button>
+                    <button>LinkedIn</button> 
+                </div>
+            </div>
+            
             <!-- <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
                 <p>Send me a feedback or message me!</p>
                 <input type="hidden" name="access_key" value="5fb2f2b3-d7f7-43ad-8797-d73896886894"> -->
         </section>
     </main>
-
     <footer>
-        <div id="line"></div>
-        <div>
-            <p>Pages</p>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-            </ul>
+        <hr>
+        <div id="links">
+            <div>
+                <p>Pages</p>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Socials</p>
+                <ul>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">Email</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <p>Socials</p>
-            <ul>
-                <li>Github</li>
-                <li>LinkedIn</li>
-                <li>Email</li>
-            </ul>
-        </div>
-        <div>
-            <p class="greet">Thank You For Visiting My Page</p>
-            <p class="copyright">Made by <span>John Vincent Lizada<span> | Copyright&copy; 2026 All Rights Reserved</p>
+        <div id="copyright">
+            <p>Thank You For Visiting My Page</p>
+            <p>Made by <span>John Vincent Lizada</span> | Copyright&copy; 2026 All Rights Reserved</p>
         </div>
         
     </footer>

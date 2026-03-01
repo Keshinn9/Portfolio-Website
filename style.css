@@ -1,4 +1,4 @@
-/* DEFAULTS */
+/* ------------------ Defaults --------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body{
     font-family: "Inter", sans-serif;
     background-color: #111112;
     color: white;
-    margin-inline: 500px;
+    margin-inline: 450px;
 }
 img{
     height: 100px;
@@ -32,15 +32,26 @@ button{
     padding: 10px;
     font-weight: 600;
 }
+.header{
+    font-size: 27px;
+    padding-bottom: 20px;
+}
+hr{
+    border-color: rgba(98, 98, 98, 0.3);
+    border-width: 1px;
+}
 
-/* NAV BAR */
+/* ------------------ Navigation --------------------- */
 nav{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 100px;
 }
-
+nav > a{
+    font-size: 20px;
+    font-weight: 700;
+}
 .navbar{
     display: flex;
 }
@@ -48,8 +59,7 @@ nav{
     padding-left: 50px;
 }
 
-/* INTRO */
-
+/* ------------------ Intro --------------------- */
 .Intro{
     border-style: solid;
     border-width: 2px;
@@ -59,20 +69,27 @@ nav{
     margin-bottom: 50px;
 }
 .Intro_socials{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: #0A0A0B;
     margin: 5px;
     border-style: solid;
     border-width: 2px;
     border-color: rgba(98, 98, 98, 0.3);
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Intro_socials > img{
+    width: 30px;
+    height: 30px;
 }
 #Intro_container{
     display: flex;
     justify-content: space-between;
-
 }
+
 #soc_container{
     display: flex;
 }
@@ -87,17 +104,200 @@ nav{
     width:auto;
     margin-inline:5px ;
 }
-
-/* Skills */
-.Skills{
-    display: flex;
-    justify-content:center;
-}
 .Intro > p{
     margin-bottom: 20px;
     margin-top: 5px;
     margin-left: 10px;
 }
+
+
+/* ------------------Skills--------------------- */
+.Skills{
+    display: flex;
+    justify-content:center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(98, 98, 98, 0.3);
+    border-radius: 20px;
+    padding:25px;
+    margin-bottom: 50px;
+}
+
+/* Technical Skills */
+#Technical{
+    margin-bottom: 50px;
+}
+#Technical > h3{
+    text-align: center;
+    margin-top: 20px;
+}
+#Technical > ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+#Technical > ul > li{
+    margin-inline: 55px ;
+}
+#tech1 > li > img, #tech2 > li > img{
+    height: 80px;
+    width: auto;
+}
+/* Soft Skills */
+#Soft{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#Soft > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#Soft > div{
+    display: flex;
+    justify-content: space-around;  
+    align-items: center; 
+}
+#soft1 > li, #soft2 > li{
+    font-size: 15px;
+    font-weight: 300;
+    padding-block: 10px;
+
+}
+#soft1 > li > img, #soft2 > li > img{
+    height: 15px;
+    width: 15px;
+    padding-right: 10px;
+}
+
+/* ------------------Projects--------------------- */
+#Projects{
+    margin-bottom: 50px;
+    
+}
+.Project{
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(98, 98, 98, 0.3);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.Project > #Calculator, .Project > #Portfolio{
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 350px;
+    
+    
+    /* 2. Scale it to fill the card */
+    background-size: cover;
+    background-position: center;
+    
+    /* 3. Style the layout */
+    display: flex;
+    align-items: flex-end; /* Pushes content to the bottom */
+    padding: 20px;
+    color: white;
+
+}
+#Calculator{
+    background-image: linear-gradient(rgba(19, 107, 115, 0.437), rgb(0, 0, 0)), url('Images/Calculator.png');
+}
+#Portfolio{
+    background-image: linear-gradient(rgba(19, 107, 115, 0.437), rgb(0, 0, 0)), url('Images/V1Portfolio.png');
+}
+.info{
+    color: #808080;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.info > #title{
+    margin-left: -10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#Calculator > ul, #Portfolio > ul {
+    display: flex;
+    position: absolute;
+    top: 20px;   /* Distance from top */
+    right: 20px; /* Distance from right */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Ensure the image doesn't get too big */
+#Calculator > ul img, #Portfolio > ul img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ------------------Contact--------------------- */
+
+#Contact{
+    margin-bottom: 100px;
+}
+#Contact > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+#sup_text{
+    color: #808080;
+    margin-bottom: 10px;
+}
+#cta{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#Contact > div > div > button{
+    margin-inline: 10px;
+}
+
+/* ------------------Footer--------------------- */
+#links{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-block:50px ;
+}
+#links > div > p {
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+#links > div > ul > li{
+    text-align: center;
+    padding-block: 5px;
+}
+#links > div > ul > li > a{
+    color: #808080;
+}
+
+#copyright{
+    text-align: center;
+    color: #808080;
+    margin-bottom: 60px;
+}
+
+#copyright > p > span{
+    color: white;
+
+}
+
+
+
+
 
 
 

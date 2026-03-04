@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: "Inter", sans-serif;
     color: white;
@@ -19,6 +18,7 @@ body{
 
     background-attachment: fixed;
     background-color: #111112;
+    
 }
 img{
     height: 100px;
@@ -30,6 +30,10 @@ li{
 a{
     text-decoration: none;
     color: white;
+}
+a:hover{
+    transition: ease-in-out 0.3s;
+    color: #3da3a8;
 }
 button{
     background-color: #0A0A0B;
@@ -47,11 +51,11 @@ button{
         circle at bottom, #07292b 20%, #111112 100%
         /* ellipse at bottom, #2e1c09 0%, #241a10 15%, #111112 50% */ 
     );
-    transition: background 0.3s ease;
 }
 button:hover{
     background: #3da3a8;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
+    border-color: white;
 }
 
 .header{
@@ -95,7 +99,6 @@ nav > a{
 .Intro_socials{
     width: 40px;
     height: 40px;
-    background-color: #0A0A0B;
     margin: 5px;
     border-style: solid;
     border-width: 2px;
@@ -104,6 +107,14 @@ nav > a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(
+        to bottom, #07292b 20%, #111112 100%
+    );
+}
+.Intro_socials:hover{
+    transition: ease-in-out 0.2s;
+    background: #3da3a8;
+    border-color: white;
 }
 .Intro_socials > img{
     width: 30px;
@@ -138,61 +149,38 @@ nav > a{
 .Skills{
     display: flex;
     justify-content:center;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(98, 98, 98, 0.3);
     border-radius: 20px;
     padding:25px;
     margin-bottom: 50px;
-    /* background-color: #111112; */
 }
 
 /* Technical Skills */
 #Technical{
-    margin-bottom: 50px;
+    width: 100%;
 }
-#Technical > h3{
-    text-align: center;
-    margin-top: 20px;
-}
-#Technical > ul{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
+#Technical ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
 }
 #Technical > ul > li{
-    margin-inline: 55px ;
-}
-#tech1 > li > img, #tech2 > li > img{
-    height: 80px;
-    width: auto;
-}
-/* Soft Skills */
-#Soft{
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-#Soft > h3 {
     text-align: center;
-    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 20px;
+    padding-block:15px;
+    padding-inline: 20px;
+    background-color: #07292b;
+    background: linear-gradient(
+        to top, #07292b 20%, #111112 100%
+    );
 }
-#Soft > div{
-    display: flex;
-    justify-content: space-around;  
-    align-items: center; 
-}
-#soft1 > li, #soft2 > li{
-    font-size: 15px;
-    font-weight: 300;
-    padding-block: 10px;
-
-}
-#soft1 > li > img, #soft2 > li > img{
-    height: 15px;
-    width: 15px;
-    padding-right: 10px;
+#Technical img{
+    width: 50px;
+    height: 50px;
 }
 
 /* ------------------Projects--------------------- */
@@ -236,22 +224,36 @@ nav > a{
     margin-bottom: 10px;
 }
 
-#Calculator > div >  img, #Portfolio >  div > img{
-    width: auto;
-    height: 80px;
+.Project:hover{
+    background-color: #111112c0;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
-#Calculator, #Portfolio{
+#Cal:hover{
+    background-image: url("Images/Calculator.png");
+}
+#Ecom:hover{
+    background-image: url("Images/_E__Coding_eCommerce20\(TechNest\)_Website_index.html.png");
+}
+#Sys:hover{
+    background-image: url("Images/Attendace_system.png");
+}
+
+#Calculator, #Ecommerce, #System{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.Portfolio_btn{
+
+.Project_btn > button{
     text-align: center;
+    font-size: 15px;
+    width: auto;
+    height: auto;
 }
 
 /* ------------------Contact--------------------- */
-
 #Contact{
     margin-bottom: 100px;
 }

@@ -1,14 +1,24 @@
 /* ------------------ Defaults --------------------- */
+@import url("media_query.css");
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: "Inter", sans-serif;
-    background-color: #111112;
     color: white;
     margin-inline: 450px;
+    /* Background */
+    background: radial-gradient(
+        circle at bottom, #041114 0%,#102324 15%, #111112 50%
+        /* ellipse at bottom, #2e1c09 0%, #241a10 15%, #111112 50% */ 
+    );
+
+    background-attachment: fixed;
+    background-color: #111112;
 }
 img{
     height: 100px;
@@ -24,14 +34,26 @@ a{
 button{
     background-color: #0A0A0B;
     color: white;
-    width: 100px;
+    width: 150px;
+    height: 50px;
     border-style: solid;
     border-width: 2px;
     border-color: rgba(98, 98, 98, 0.3);
     border-radius: 9px;
     padding: 10px;
     font-weight: 600;
+    font-size: 18px;
+    background: radial-gradient(
+        circle at bottom, #07292b 20%, #111112 100%
+        /* ellipse at bottom, #2e1c09 0%, #241a10 15%, #111112 50% */ 
+    );
+    transition: background 0.3s ease;
 }
+button:hover{
+    background: #3da3a8;
+    transition: background 0.3s ease;
+}
+
 .header{
     font-size: 27px;
     padding-bottom: 20px;
@@ -47,6 +69,7 @@ nav{
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 100px;
+    
 }
 nav > a{
     font-size: 20px;
@@ -67,6 +90,7 @@ nav > a{
     border-radius: 15px;
     padding: 25px;
     margin-bottom: 50px;
+    /* background-color: #111112; */
 }
 .Intro_socials{
     width: 40px;
@@ -96,8 +120,8 @@ nav > a{
 #intro_loc{
     display: flex;
     color: #585858;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 #intro_loc > img{
     height: 25px;
@@ -105,9 +129,8 @@ nav > a{
     margin-inline:5px ;
 }
 .Intro > p{
-    margin-bottom: 20px;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
 }
 
 
@@ -121,6 +144,7 @@ nav > a{
     border-radius: 20px;
     padding:25px;
     margin-bottom: 50px;
+    /* background-color: #111112; */
 }
 
 /* Technical Skills */
@@ -174,70 +198,57 @@ nav > a{
 /* ------------------Projects--------------------- */
 #Projects{
     margin-bottom: 50px;
-    
 }
+.Projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.Project:last-child:nth-child(odd) {
+    grid-column: span 2; /* It will span across both columns */
+    max-width: 100%;     /* Ensure it doesn't break boundaries */
+}
+
 .Project{
-    
+    display: flex;
     border-style: solid;
     border-width: 2px;
     border-color: rgba(98, 98, 98, 0.3);
     border-radius: 20px;
-    margin-bottom: 40px;
-}
-.Project > #Calculator, .Project > #Portfolio{
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-    height: 350px;
-    
-    
-    /* 2. Scale it to fill the card */
-    background-size: cover;
-    background-position: center;
-    
-    /* 3. Style the layout */
     display: flex;
-    align-items: flex-end; /* Pushes content to the bottom */
     padding: 20px;
     color: white;
+}
 
-}
-#Calculator{
-    background-image: linear-gradient(rgba(19, 107, 115, 0.437), rgb(0, 0, 0)), url('Images/Calculator.png');
-}
-#Portfolio{
-    background-image: linear-gradient(rgba(19, 107, 115, 0.437), rgb(0, 0, 0)), url('Images/V1Portfolio.png');
-}
 .info{
     color: #808080;
-    font-size: 18px;
-    margin-left: 15px;
+    font-size: 16px;
+    margin-inline:50px;
     margin-bottom: 20px;
+    text-align: center;
+
 }
 .info > #title{
     margin-left: -10px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-#Calculator > ul, #Portfolio > ul {
+#Calculator > div >  img, #Portfolio >  div > img{
+    width: auto;
+    height: 80px;
+}
+#Calculator, #Portfolio{
     display: flex;
-    position: absolute;
-    top: 20px;   /* Distance from top */
-    right: 20px; /* Distance from right */
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-/* Ensure the image doesn't get too big */
-#Calculator > ul img, #Portfolio > ul img{
-    width: 50px;
-    height: 50px;
+.Portfolio_btn{
+    text-align: center;
 }
-
 
 /* ------------------Contact--------------------- */
 
@@ -252,6 +263,7 @@ nav > a{
     margin-top: 80px;
 }
 #sup_text{
+    font-size: 20px;
     color: #808080;
     margin-bottom: 10px;
 }
@@ -294,9 +306,6 @@ nav > a{
     color: white;
 
 }
-
-
-
 
 
 

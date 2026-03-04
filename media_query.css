@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 1425px) {
+    html body{
+        margin-inline: 180px;
+    }
+}
+@media (max-width: 800px) {
+
+    html body{
+        margin-inline: 70px;
+    }
+
+}

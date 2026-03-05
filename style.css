@@ -187,6 +187,13 @@ nav > a{
 #Projects{
     margin-bottom: 50px;
 }
+#Calculator, #Ecommerce, #System {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Keep this */
+}
 .Projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -207,33 +214,36 @@ nav > a{
     padding: 20px;
     color: white;
 }
-
 .info{
     color: #808080;
     font-size: 16px;
-    margin-inline:50px;
+    margin-inline:30px;
     margin-bottom: 20px;
+    max-width: 600px;
     text-align: center;
-
+}
+.info span{
+    font-weight: 700;
+    color: white;
 }
 .info > #title{
-    margin-left: -10px;
     color: white;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-block: 10px;
 }
 
 .Project:hover{
-    background-color: #111112c0;
+    background-color: #202020;
     background-size: cover;
-    background-blend-mode: multiply;
+    background-blend-mode:multiply;
 }
 #Cal:hover{
     background-image: url("Images/Calculator.png");
+    background-position: center;
 }
 #Ecom:hover{
-    background-image: url("Images/_E__Coding_eCommerce20\(TechNest\)_Website_index.html.png");
+    background-image: url("Images/Ecommerce.png");
 }
 #Sys:hover{
     background-image: url("Images/Attendace_system.png");

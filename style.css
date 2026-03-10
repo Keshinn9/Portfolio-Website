@@ -332,14 +332,16 @@ nav > a{
 
 
 /* -------------------------------ABOUT ME PAGE------------------------------------ */
-/* -----------ABOUT ME---------- */
-#abt_container, #Abt_Skills, #Abt_Certificates{
+
+#abt_container, #Abt_Skills, #Abt_Certificates, #Abt_Edu{
     border-style: solid;
     border-width: 2px;
     border-color: rgba(98, 98, 98, 0.3);
     border-radius: 8px;
     padding: 30px;
 }
+
+/* -----------ABOUT ME---------- */
 #AboutMe > h1{
     text-align: center;
 }
@@ -354,6 +356,24 @@ nav > a{
     font-weight: 800;
 }
 
+/* --------------Education------------ */
+#Abt_Edu{
+    margin-bottom: 30px;
+}
+#Abt_Edu h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.edu > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.edu > p {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
 /* -----------Skills---------- */
 #Abt_Skills{
     display: flex;
@@ -387,4 +407,46 @@ nav > a{
 }
 #Soft_Skills img{
     height: 10px;
+}
+
+/* ----------------Certificates------------- */
+#Abt_Certificates > h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#Cert_Con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Cert_Title > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 20px;
+}
+#Cert_Title > div > p{
+    font-weight: 700;
+}
+#Cert_Title .date{
+    font-weight: 400;
+    color: #808080;
+
+}
+#Cert_Desc > div{
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    margin-bottom: 20px;
+}
+#Cert_Desc > div > p{
+    max-width: 500px;
+}
+#Cert_Desc img{
+    height: 10px;
+    width: auto;
+    margin-top: 5px;
+    margin-right: 10px;
 }

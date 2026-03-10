@@ -332,14 +332,16 @@ nav > a{
 
 
 /* -------------------------------ABOUT ME PAGE------------------------------------ */
-/* -----------ABOUT ME---------- */
-#abt_container, #Abt_Skills, #Abt_Certificates{
+
+#abt_container, #Abt_Skills, #Abt_Certificates, #Abt_Edu{
     border-style: solid;
     border-width: 2px;
     border-color: rgba(98, 98, 98, 0.3);
     border-radius: 8px;
     padding: 30px;
 }
+
+/* -----------ABOUT ME---------- */
 #AboutMe > h1{
     text-align: center;
 }
@@ -354,6 +356,24 @@ nav > a{
     font-weight: 800;
 }
 
+/* --------------Education------------ */
+#Abt_Edu{
+    margin-bottom: 30px;
+}
+#Abt_Edu h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.edu > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.edu > p {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
 /* -----------Skills---------- */
 #Abt_Skills{
     display: flex;
@@ -388,3 +408,4 @@ nav > a{
 #Soft_Skills img{
     height: 10px;
 }
+

@@ -11,13 +11,18 @@ body{
     color: white;
     margin-inline: 450px;
     /* Background */
-    background: radial-gradient(
+    /* background: radial-gradient(
         circle at bottom, #041114 0%,#102324 15%, #111112 50%
-        /* ellipse at bottom, #2e1c09 0%, #241a10 15%, #111112 50% */ 
-    );
-
-    background-attachment: fixed;
-    background-color: #111112;
+        ellipse at bottom, #2e1c09 0%, #241a10 15%, #111112 50% 
+    ); */
+    background-image: url(Images/Bg.jpg);
+    background-blend-mode:multiply;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: #162a35;
     
 }
 img{
@@ -33,7 +38,6 @@ a{
 }
 a:hover{
     transition: ease-in-out 0.3s;
-    color: #3da3a8;
 }
 button{
     background-color: #0A0A0B;
@@ -67,7 +71,17 @@ hr{
     border-width: 1px;
 }
 
-
+/* Container design*/
+.Intro, .Project{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F4F4F4;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: rgba(12, 12, 12, 0.67);
+    box-shadow: 0px 0px 15px #F4F4F4;
+}
+    
 /* ----------------------------------------------------------------------------------------- */
 
 
@@ -93,9 +107,6 @@ nav > a{
 
 /* ------------------ Intro --------------------- */
 .Intro{
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(98, 98, 98, 0.3);
     border-radius: 15px;
     padding: 25px;
     margin-bottom: 50px;
@@ -215,13 +226,10 @@ nav > a{
 
 .Project{
     display: flex;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(98, 98, 98, 0.3);
     border-radius: 20px;
-    display: flex;
     padding: 20px;
     color: white;
+    margin: 20px;
 }
 .info{
     color: #808080;
@@ -336,9 +344,11 @@ nav > a{
 #abt_container, #Abt_Skills, #Abt_Certificates, #Abt_Edu{
     border-style: solid;
     border-width: 2px;
-    border-color: rgba(98, 98, 98, 0.3);
+    border-color: #F4F4F4;
     border-radius: 8px;
     padding: 30px;
+    background-color: rgba(12, 12, 12, 0.67);
+    box-shadow: 0px 0px 15px #F4F4F4;
 }
 
 /* -----------ABOUT ME---------- */

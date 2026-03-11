@@ -98,6 +98,10 @@ nav > a{
     font-size: 20px;
     font-weight: 700;
 }
+nav a:hover{
+    transition: ease-in-out 0.3s;
+    color: #3da3a8;
+}
 .navbar{
     display: flex;
 }

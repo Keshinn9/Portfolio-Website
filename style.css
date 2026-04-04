@@ -464,3 +464,42 @@ nav a:hover{
     margin-top: 5px;
     margin-right: 10px;
 }
+
+
+
+/* ---------------------------------------- PORTFOLIO PAGE ----------------------------------- */
+#Port_head{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#Portfolio_Page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.port_items{
+    border: white solid 1px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.port_items ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 10px;
+}
+.port_items li{
+    padding-inline: 20px;
+}
+
+.port_items .description{
+    background-color: rgba(10, 10, 11, 0.70);
+    margin-top: 100px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+}

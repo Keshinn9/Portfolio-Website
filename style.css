@@ -468,51 +468,66 @@ nav a:hover{
 
 
 /* ---------------------------------------- PORTFOLIO PAGE ----------------------------------- */
-#Port_head{
+#Portfolio_Head{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-#Portfolio_Page{
+#Portfolio_Content{
     display: grid;
     grid-template-columns: auto;
+    gap: 30px;
 }
-.port_items{
+
+.portfolio_items_con{
+    border: solid 1px white;
+    border-radius: 30px ;
+    overflow: hidden;
     position: relative;
-    border: white solid 1px;
-    border-radius: 30px;
-    margin-bottom: 20px;
-    height: 100%;
     width: 100%;
+    height: 70vh;
 }
 
-.tech_stack{
+.programming_stack{
     position: absolute;
-    top: 2%;
-    left: 100%;
+    left: 99%;
     translate: -100%;
+    padding: 15px;
 }
 
-img.project_img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top center;
+.programming_stack img{
+    width: auto;
+    height: 50px;
 }
 
-.port_items ul{
+.programming_stack ul{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-}
-.port_items li{
-    padding-inline: 20px;
+    gap: 10px;
 }
 
-.port_items .description{
+.project_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    object-position: top;
+}
+.portfolio_items_con::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.699);
+    z-index: 0;
+}
+
+.description{
+    position: absolute;
     background-color: rgba(10, 10, 11, 0.70);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding: 20px;
+    bottom: 0;
+    padding: 25px;
 }

@@ -507,6 +507,7 @@ nav a:hover{
     height: 60vh;
     box-shadow: #F4F4F4 0 0 15px;
     margin: 0 auto;
+    transition: .5s;
 }
 
 .programming_stack{
@@ -535,16 +536,8 @@ nav a:hover{
     object-fit: cover;
     z-index: -2;
     object-position: top;
-}
-.portfolio_items_con::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
+    filter: brightness(25%);
+    transition: .3s;
 }
 
 .description{
@@ -573,8 +566,17 @@ nav a:hover{
     margin-bottom: 20px;
 }
 
+.portfolio_items_con:hover{
+    box-shadow: #ffffff 0 0 25px;
+}
+
 .portfolio_items_con:hover .description {
     padding-bottom: 100px;
+}
+
+.portfolio_items_con:hover .project_img{
+    transform: scale(1.1);
+    filter: brightness(35%);
 }
 
 .more_btn{
@@ -586,3 +588,4 @@ nav a:hover{
 .portfolio_items_con:hover .more_btn{
     opacity: 1;
 }
+

@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html:has(dialog[open]){
+    overflow: hidden;
+}
+
 body{
     font-family: "Inter", sans-serif;
     color: #F4F4F4;
@@ -496,6 +500,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: auto;
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .portfolio_items_con{
